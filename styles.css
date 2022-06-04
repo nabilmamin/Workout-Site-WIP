@@ -1,0 +1,315 @@
+body {
+    background: black;
+    margin: 0;
+    padding: 0;
+    color: var(--color-offwhite);
+    font-family: "Poppins", sans-serif;
+    --color-maroon: #8C2920;
+    --color-red: #BF382C;
+    --color-orange: #D95D30;
+    --color-green: #3E594F;
+    --color-forest: #2C403C;
+    --color-offwhite: #D9D2D0;
+}
+
+
+@media screen and (min-width: 551px) {
+    .mobile {
+        display: none ;
+    }
+
+    .mobile-only {
+        display: block;
+        opacity: 1;
+        color: var(--color-offwhite);
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .mobile-only {
+        display: none;
+    }
+    .hero-logo {
+        height: 30vh;
+        margin: 0;
+        padding: 0;
+        border-radius: 0 0 25px 25px;
+        background-color: black;
+        background-image: url("img/hero-image.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-logo-text {
+        font-size: 2rem;
+    }
+
+
+    .hero-selection {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .hero-selection-title {
+        padding-top: 2rem;
+        margin-left: 2rem;
+        width: 100%;
+        text-align: left;
+    }
+
+    .hero-selection-item {
+        border-radius: 25px;
+        border: 3px solid var(--color-offwhite);
+        outline: none;
+        width: 70%;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        
+    }
+
+    .hero-selection-item-text {
+        font-size: 2rem;
+        color: var(--color-offwhite);
+    }
+
+
+    #hero-selection-item-one {
+        background-image: url("img/summer-shred-image.jpg");
+        background-size: cover;
+        background-position: 25% 75%;
+    }
+
+    #hero-selection-item-two {
+        background-image: url("img/legpress-image.jpg");
+        background-size: cover;
+        background-position: 100% 25%;
+    }
+
+    #hero-selection-item-three {
+        background-image: url("img/running-image.jpg");
+        background-size: cover;
+        background-position: 0% 65%;
+    }
+
+    #hero-selection-item-four {
+        background-image: url("img/lung-image.jpg");
+        background-size: cover;
+        background-position: 0% 75%;
+    }
+
+
+
+    .summer-shred-main-title {
+        padding-top: 1rem;
+        margin-left: 2rem;
+        width: 100%;
+        text-align: left;
+
+    }
+
+    .summer-shred-container {
+        background-color: var(--color-offwhite);
+        outline: none;
+        border: 3px solid var(--color-offwhite);
+        width: 70%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        border-radius: 25px;
+        color: var(--color-red);
+        text-decoration: none;
+    }
+
+    /*
+    .summer-shred-container:nth-child(2) {
+        background-color: #85DEF2;
+    }
+    .summer-shred-container:nth-child(3) {
+        background-color: #54A1BF;
+    }
+    .summer-shred-container:nth-child(4) {
+        background-color: #0D3140;
+    }
+    .summer-shred-container:nth-child(5) {
+        background-color: #1F3473;
+    }
+    .summer-shred-container:nth-child(6) {
+        background-color: #4441A6;
+    }
+    .summer-shred-container:nth-child(7) {
+        background-color: #662d91;
+    }
+    */
+
+    /* Individual Day Exercises */
+
+    .workout-container {
+        min-height: 100px;
+        height: fit-content;
+    }
+
+    .workout-item {
+        min-height: 100px;
+        max-height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .workouts-container-main {
+            min-height: 0px;
+            max-height: fit-content;
+            display: none;
+            padding-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+    .workouts-container-main.active {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+    }
+
+    .workouts-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid var(--color-offwhite);
+        margin-bottom: 1rem;
+        padding: .5rem;
+        height: 80px;
+    }
+    .workout-item-header {
+        height: 20%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.5s ease;
+        
+    }
+
+/* above is working on box heights */
+
+
+    .workout-item-title {
+        font-size: 1.2rem;
+    }
+
+    .workout-item-bttn-grp {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .workout-item-btn {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        font-size: 1.1rem;
+    }
+
+    ion-icon {
+        font-size: 32px;
+    }
+
+    .workouts-image {
+        height: 100%;
+        width: 20%;
+    }
+
+    .workouts-detail {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 50%;
+        padding-left: 1rem;
+    }
+
+    .workouts-buttons {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        gap: .2rem;
+    }
+
+    .workouts-btn {
+        width: 100%;
+        font-size: 1.2rem;
+        color: var(--color-offwhite);
+        background-color: var(--color-offwhite);
+        border-color: var(--color-offwhite);
+    }
+
+    .workouts-btn.active {
+        background-color: var(--color-red);
+        border-color: var(--color-red);
+    }
+
+
+    .summer-shred-program {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s ease;
+    }
+
+    .summer-shred-program.active {
+        opacity: 1;
+        min-height: 100vh;
+        height: fit-content; 
+    }
+
+
+
+    /* #summer-shred {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s ease;
+    } */
+
+    /* #summer-shred.active {
+        height: 100vh;
+    } */
+    /* toggle individual exercises on and off.  */
+
+    
+
+    /* alternative .active classe that can work with different functions. */
+
+    /* .workout-item.active .workouts-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid var(--color-offwhite);
+        margin-bottom: 1rem;
+        padding: .5rem;
+        height: 100vh;
+    }
+    .workouts-container.active {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid var(--color-offwhite);
+        margin-bottom: 1rem;
+        padding: .5rem;
+        height: 100vh;
+    } */
+    
+
+}
