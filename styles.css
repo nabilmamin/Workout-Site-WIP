@@ -212,7 +212,7 @@ body {
         display: flex;
         align-items: center;
         gap: 1rem;
-        width: 50%;
+        width: 40%;
         padding-right: 1rem;
     }
 
@@ -237,7 +237,7 @@ body {
         display: flex;
         flex-direction: column;
         text-align: left;
-        width: 50%;
+        width: 40%;
         
     }
 
