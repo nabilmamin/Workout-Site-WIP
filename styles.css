@@ -190,6 +190,7 @@ body {
         margin-bottom: 1rem;
         padding: .5rem;
         height: 80px;
+        overflow: hidden;
     }
     .workout-item-header {
         height: 20%;
